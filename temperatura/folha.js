@@ -1,50 +1,29 @@
+function confirmar() {
+    var tn1 = document.querySelector('#txtn1')
+    var res = document.querySelector('#res')
 
-
-function confirmar (){
-    var esc = document.querySelector('input#texto')
-    var res = document.querySelector('div#res')
-    var calc = document.querySelector('article#calc')
-
-
-    var temp = esc.value
-
-    if (temp === "F"){
-
-        calc.innerHTML = `<p id="p1">Fahrenheit: <input type="number" name="fah" id="Fah"></p>`
-        calc.innerHTML += `<input type="button" value="converter" onclick="converter()"></input>`
-
-       
-    }else  if (temp === "C"){
-        calc.innerHTML = `<p id="p2">Celsios: <input type="number" name="cel" id="cel"></p>`
-        calc.innerHTML += `<input type="button" value="converter" onclick="converter()"></input>`
-
-       
-
-       }
-    }
-    function converter(){
-        var fah = document.querySelector('input#Fah')
-        var fah = Number.parseFloat(fah.value)
-
-        var c = 5 / 9 * (fah - 32)
-       
-
-        res.innerHTML = `Temperatura equivalente em Celsius: ${c}`
-
-
-   }
-   function converter(){
-    var cel = document.querySelector('input#cel')
-    var cel = Number.parseFloat(cel.value)
-
-    var f = 9 * cel / 5 + 32
-
-    res.innerHTML = `Temperatura equivalente em Celsius: ${f}`
+    var n1 = Number.parseFloat(tn1.value)
+    
+    var n1 = n1.toFixed(2)
+    
+    var cel = 5 / 9 * (n1 - 32)
+    
+    var cel = cel.toFixed(2)
+    
+    res.innerHTML = `<p>A temperatura em Celsius é: ${cel}</p>`
+  
 }
+function confirmar1(){
+    var tn2 = document.querySelector('#txtn2')
+    var res = document.querySelector('#res')
 
+    var n2 = Number.parseFloat(tn2.value)
 
+    var n2 = n2.toFixed(2)
 
+    var fah = 9 * n2 / 5 + 32
 
+    var fah = fah.toFixed(2)
 
-
-
+    res.innerHTML += `<p>A temperatura em fahrenheit é : ${fah}</p>`
+}
