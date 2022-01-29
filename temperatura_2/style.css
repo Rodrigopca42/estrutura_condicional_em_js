@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body{
+    background-color: aquamarine;
+}
+
+header{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    border-radius: 8px;
+}
+:focu
+section{
+    background-color: white;
+    padding: 20px 10px;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius:10px ;
+    font-size: 1.4em;
+}

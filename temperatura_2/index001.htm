@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperatura</h1>
+    </header>
+    <section>
+        <div>
+            <P>Escolha a Escala:
+                <input type="radio" name="radtem" id="fah" checked>
+                <label for="fah">Fahrenheit</label>
+                <input type="radio" name="radtem" id="cel">
+                <label for="cel">Celsius</label>
+            </P>
+            <p>
+                Digite a Temperatura: <input type="number" name="txtn1" id="txtn1">
+            </p>
+            <p>
+                <input type="button" value="Converter"  onclick="converter()">
+            </p>
+        </div>
+        <div id="res">
+            Resultado
+        </div>
+    </section>
+    <script src="folha.js"></script>
+    <footer>
+input
+    </footer>
+</body>
+</html>
