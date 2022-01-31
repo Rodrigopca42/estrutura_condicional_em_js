@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+
+
+body{
+    background-color: rgba(193, 252, 232, 0.664);
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(103, 255, 204, 0.664);
+    color: rgb(92, 91, 91);
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    line-height: 80px;
+    margin: auto;
+
+    
+}
+main{
+    height: 600px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    
+}
+h3{
+    color: gray;
+}
